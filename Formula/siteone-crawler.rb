@@ -7,20 +7,20 @@ class SiteoneCrawler < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/janreges/siteone-crawler/releases/download/v#{version}/siteone-crawler-v#{version}-macos-arm64.tar.gz"
-      sha256 "7e41a66eca4cedb8725807dd422491862a753a92981e304fbf2cf8cfc74ff052"
+      sha256 "4937636cdca12fb3e0188fc3d20ce2c71d2da7c9e4c4fb30d28494a49e764165"
     else
       url "https://github.com/janreges/siteone-crawler/releases/download/v#{version}/siteone-crawler-v#{version}-macos-x64.tar.gz"
-      sha256 "c8691c31876766d9825e20ae32b474a3e462b4b29d54c7dea675738a0d5a9dfb"
+      sha256 "8a9b8aaa23103b4862bcd1c2d12963afe4c17de2a8fe0868e8dcccfa6061fc72"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/janreges/siteone-crawler/releases/download/v#{version}/siteone-crawler-v#{version}-linux-arm64.tar.gz"
-      sha256 "fcabdcb731a33208a1daf5b0ebb3231bbbe119cc7fc2d1d2806c135ecdf04f47"
+      sha256 "18f3eeaf2641dcfb3816a51ae77f19aaa353bced2e98cb900c0199c9d36a69c8"
     else
       url "https://github.com/janreges/siteone-crawler/releases/download/v#{version}/siteone-crawler-v#{version}-linux-x64.tar.gz"
-      sha256 "81d8e1c360847e3859c5ec5935ed39471ef4bac8d2043241258d6c0c29575a72"
+      sha256 "72241988a90bcfb426d91cdea5ef1b2cd7364b5c637633ba6fe7db6be39c1fa8"
     end
   end
 
