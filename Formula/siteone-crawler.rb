@@ -1,26 +1,26 @@
 class SiteoneCrawler < Formula
   desc "Website crawler and QA toolkit in Rust for security, performance, SEO, and accessibility audits, offline cloning, markdown export, sitemap generation, cache warming, and CI/CD gating — one dependency-free binary for all major platforms, 10 tools in one."
   homepage "https://crawler.siteone.io/"
-  version "2.0.0"
+  version "2.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/janreges/siteone-crawler/releases/download/v#{version}/siteone-crawler-v#{version}-macos-arm64.tar.gz"
-      sha256 "dac81f05c06f97fab29b2552502a4b14e9fb667f53a114c895b668ee9029388b"
+      sha256 "7e41a66eca4cedb8725807dd422491862a753a92981e304fbf2cf8cfc74ff052"
     else
       url "https://github.com/janreges/siteone-crawler/releases/download/v#{version}/siteone-crawler-v#{version}-macos-x64.tar.gz"
-      sha256 "fc5eda46dbddcc6d0b3d7de8ab64617e130934c93eb6460f7530f60f2289b168"
+      sha256 "c8691c31876766d9825e20ae32b474a3e462b4b29d54c7dea675738a0d5a9dfb"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/janreges/siteone-crawler/releases/download/v#{version}/siteone-crawler-v#{version}-linux-arm64.tar.gz"
-      sha256 "8c975d1ea794eb4674af18d25dee01dc4ea1c841e98cc88f5e09a5524ca0c046"
+      sha256 "fcabdcb731a33208a1daf5b0ebb3231bbbe119cc7fc2d1d2806c135ecdf04f47"
     else
       url "https://github.com/janreges/siteone-crawler/releases/download/v#{version}/siteone-crawler-v#{version}-linux-x64.tar.gz"
-      sha256 "5cdbb1b79b7091a0f7431ad9e2d24e071801be4817458b1dbbc5cae930f9fa9d"
+      sha256 "81d8e1c360847e3859c5ec5935ed39471ef4bac8d2043241258d6c0c29575a72"
     end
   end
 
